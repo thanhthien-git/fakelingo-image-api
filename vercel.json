@@ -14,5 +14,8 @@
   ],
   "env": {
     "NODE_ENV": "production"
+  },
+  "functions": {
+    "**/*.func": { "maxDuration": 60, "memory": 1024, "maxBodySize": "20mb" }
   }
 }
