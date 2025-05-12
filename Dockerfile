@@ -18,6 +18,7 @@ COPY package*.json ./
 RUN npm install --legacy-peer-deps --only=production
 
 COPY --from=builder /app/dist ./dist
-COPY .env .env
+#FOR LOCAL RUN ONLY
+# COPY .env .env
 
 CMD ["node", "dist/main.js"]
